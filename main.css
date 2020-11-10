@@ -112,7 +112,7 @@ nav a{
 }
 
 .About-content p{
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .hover-div{
@@ -157,7 +157,7 @@ nav a{
 }
 
 .icons{
-    padding-top: 16em;
+    padding-top: 8em;
     position: flex;
     display:grid;
     grid-template-columns: repeat(7,1fr);
