@@ -112,6 +112,13 @@ nav a{
 
 .About-content .text-div span{
     color : #009387;
+    border-bottom: 1px solid transparent;
+}
+
+.About-content .text-div span:hover{
+    transition: border 1s ease;
+    border-bottom-color : #009387;
+    cursor: pointer;
 }
 
 .About-content p{
@@ -132,7 +139,8 @@ nav a{
     transition: all 1s ease;
   }
   
-  .caption{
+
+.caption{
     width: 7em;
     display: flex;
     justify-content: center;
@@ -155,8 +163,8 @@ nav a{
 
 
 .caption:hover .text{
+    transition: all 1s;  
     opacity: 1;
-    transition: all 0.8s ease-out;  
 }
 
 .icons{
