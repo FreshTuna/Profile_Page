@@ -1,0 +1,81 @@
+.Hobby{
+    height: 100%;
+    color: white;
+}
+
+.Hobby h1{
+    text-align: center;
+    font-size : 5em;
+    font-family :"HelveticaNeue-Bold",sans-serif;
+    margin: 0 auto;
+    background-color: #293448;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.Hobby-grid{
+    display: grid;
+    padding-top: 5em;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 5em;
+    background-color: #293448;
+}
+
+.Hobby-grid figure{
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 19em;
+    height: 24em;
+    border-radius: 0.8em;
+}
+
+.hobbies{
+    text-align: center;
+}
+
+.hobbies h1{
+    font-size: 2.3em;
+}
+
+
+.hobbies figure figcaption{
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+  
+.hobbies figure p{
+    margin: 1em 1em 0;
+    padding: 1em;
+    color: #ddd;
+    opacity: 1;
+    text-decoration: none!important;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0) scale(1.1);
+    transform: translate3d(0,20px,0) scale(1.1);
+} 
+  
+.hobbies figure:hover p{
+    opacity: 1;
+    text-decoration: none!important;
+    -webkit-transform: translate3d(0,-15em,0) scale(1);
+    transform: translate3d(0,-15em,0) scale(1);
+}
+  
+.hobbies img{
+    width: 20em;
+    height: 27em;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.hobbies figure:hover img{
+    opacity: 0.8;
+    -webkit-filter: brightness(60%);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }

@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
+svg{
+    display: block;
+}
 
 body{
     margin: 0px;
