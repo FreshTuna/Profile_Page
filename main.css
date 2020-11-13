@@ -20,6 +20,7 @@ a{
 }
 
 
+
 nav{
     position: fixed;
     left:70%;
@@ -55,7 +56,7 @@ nav a{
 }
 
 .header-title{
-    font-size: 55px;
+    font-size: 3.4em;
     position: absolute;
     color: white;
     width: 100%;
@@ -70,11 +71,10 @@ nav a{
 	text-transform: uppercase;
 }
 .bottom-title {
-    font-size: 50px;
+    font-size: 3.4em;
     position: absolute;
     width: 100%;
     text-align: center;
-    word-spacing: 4vw;
     top: 24%;
     background-image: url(https://media2.giphy.com/media/l0MYwXxKiwW39Dwcw/200w.gif?cid=ecf05e4784d4940c4950c4c46bb35c34fe30db66c83b6e6b&rid=200w.gif);
 	background-size: cover;
@@ -107,7 +107,7 @@ nav a{
 .About-content h1{
     font-family : "HelveticaNeue-Bold",sans-serif;
     margin: 0 auto;
-    font-size: 50px;
+    font-size: 3.4em;
 }
 
 .About-content .text-div span{
@@ -125,32 +125,6 @@ nav a{
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 1024px) {
-    .About-main>img{
-        display: none;
-    }
-    .About-main{
-        display: flex;
-        flex-direction: row;
-        padding-top: 0em;
-        position: relative;
-        left: 0%;
-        width: 100%;
-        padding-bottom: 10%;
-      }
-
-      .About-content {
-        width: 100%;
-        padding-left: 0em;
-        padding-right: 0em;
-        margin-left: 2em;
-        margin-right:2em;
-    }
-
-    .About{
-        padding-bottom: 12em;
-    }
-}
 
 
 
@@ -175,7 +149,6 @@ nav a{
   
 
 .caption{
-    width: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,6 +198,66 @@ nav a{
     0 1px 1px rgba(0, 0, 0, 0.086),
     0 1px 1px rgba(0, 0, 0, 0.12)
 }
+
+
+/*for mobile*/
+
+@media screen and (max-width: 1024px) {
+    .Header>div{
+        font-size: 2.5em;
+    }
+    nav{
+        width: 100%;
+        left: 0%;
+        text-align: center;
+    }
+    nav ul{
+        padding-left: 0;
+    }
+    nav li{
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-left: 0px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .About-main>img{
+        display: none;
+    }
+    .About-main{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0em;
+        position: relative;
+        left: 0%;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .About-content {
+        width: 100%;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .About-content .text-div{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .About-content p{
+        font-size: 1.5em;
+    }
+
+    .About{
+        padding-bottom: 12em;
+        height: 100%;
+    }
+}
+
+
+
 
 @media screen and (max-width: 1024px) {
     .icons{

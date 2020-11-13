@@ -6,7 +6,7 @@
 
 .Contact h1{
     text-align: center;
-    font-size : 4.3em;
+    font-size : 4.1em;
     font-family : "HelveticaNeue-Bold",sans-serif;
 }
 
@@ -189,4 +189,10 @@
     }
   }
 
+@media screen and (max-width: 1024px) {
+    .btn-holder a{
+        font-size: 1.3em;
+        
+    }
+}
   
