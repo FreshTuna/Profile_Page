@@ -31,12 +31,15 @@
 }
 
 .hobbies{
+    position: relative;
     text-align: center;
 }
 
 .hobbies h1{
     font-size: 2.3em;
 }
+
+
 
 
 .hobbies figure figcaption{
@@ -63,6 +66,26 @@
     -webkit-transform: translate3d(0,-15em,0) scale(1);
     transform: translate3d(0,-15em,0) scale(1);
 }
+
+.hobbies .img-holder{
+    background-color: white;
+    position: relative;
+    z-index: 3000;
+}
+
+@keyframes ring {
+    0% {
+      width: 30px;
+      height: 36px;
+      opacity: 1;
+    }
+    100% {
+      width: 27em;
+      height: 35em;
+      opacity: 0;
+    }
+  }
+
   
 .hobbies img{
     width: 20em;
@@ -74,9 +97,8 @@
 }
 
 .hobbies figure:hover img{
-    opacity: 0.9;
+    opacity: 1;
     -webkit-filter: brightness(80%);
     -webkit-transform: scale(1.2) rotate(-10deg);
     transform: scale(1.2) rotate(-10deg);
-    
-  }
+}

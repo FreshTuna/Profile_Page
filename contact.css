@@ -11,6 +11,7 @@
 }
 
 .contact-content{
+    position: relative;
     padding-top: 1em;
     width: 100%;
     text-align: center;
@@ -38,13 +39,30 @@
     padding: 0.3em 4em;
     font-weight: 500;
     color : #293448;
+    z-index: 2000;
 }
+
+
+@keyframes hoverPop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    33% {
+      transform: scale(1.05);
+    }
+    66% {
+      transform: scale(.90);
+    }
+  }
+
+
 
 .btn-holder a:hover{
     background: #293448;
     transition: all .6s;
     color: white;
     transform: scale(1.3);
+    animation: hoverPop 0.7s linear ;
 }
 
 .icon-holder{
@@ -85,3 +103,90 @@
     transform: scale(1.3);
     transition: all .3s ease-in-out;
 }
+
+
+@keyframes rotate {
+    0% {
+      top: -35px;
+      left: 96px;
+    }
+    25% {
+      top: 5px;
+      left: 50px;
+    }
+    50% {
+      top: 25px;
+      left: 96px;
+    }
+    75% {
+      top:  5px;
+      left: 130px;
+    }
+    100% {
+        top: -35px;
+        left: 96px;
+    }
+}
+
+
+#effect-1, #effect-2{
+    border-radius: 14%;
+    display: none;
+    mix-blend-mode: multiply;
+    height: 24em;
+    opacity: 1;
+    position: absolute;
+    width: 19em;
+    z-index: 1000;
+}
+
+#Email:hover #effect-1{
+    display: block;
+}
+#Email:hover #effect-2{
+    display: block;
+}
+
+.effect-1{
+    
+    animation: rotate 1.8s linear infinite;
+    background-color: rgb(154, 197, 90);
+    -webkit-filter: brightness(150%);
+    transition: all .1s ease-in-out;
+}
+
+.effect-2{
+    animation: rotate 1.2s linear reverse infinite;
+    background-color: cyan;
+    -webkit-filter: brightness(80%);
+    transition: all .1s ease-in-out;
+}
+
+.btn-holder a:hover::after{
+    content: '';
+    width: 10em; height: 2em;
+    border-radius: 0.6em;
+    border: 4px solid #293448;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.2s infinite;
+}
+
+@keyframes ring {
+    0% {
+      width: 13em;
+      height: 2em;
+      opacity: 1;
+    }
+    100% {
+      width: 16em;
+      height: 3em;
+      border: 1px solid #293448;
+      opacity: 0;
+    }
+  }
+
+  

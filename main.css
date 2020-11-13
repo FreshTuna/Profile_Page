@@ -84,7 +84,6 @@ nav a{
 	text-transform: uppercase;
 	margin: 10px 0;
 }
-
 .About{
     height: 100vh;
     padding-top: 4em;
@@ -127,6 +126,10 @@ nav a{
 
 .hover-div{
     text-align: center;
+}
+
+.hover-div img:hover{
+    cursor: pointer;
 }
 
 .caption:hover img{
