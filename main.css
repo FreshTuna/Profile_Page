@@ -97,6 +97,7 @@ nav a{
     width: 30%;
 }
 
+
 .About-content {
     width: 100%;
     padding-left: 4em;
@@ -123,6 +124,36 @@ nav a{
 .About-content p{
     font-size: 1.5em;
 }
+
+@media screen and (max-width: 1024px) {
+    .About-main>img{
+        display: none;
+    }
+    .About-main{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0em;
+        position: relative;
+        left: 0%;
+        width: 100%;
+        padding-bottom: 10%;
+      }
+
+      .About-content {
+        width: 100%;
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-left: 2em;
+        margin-right:2em;
+    }
+
+    .About{
+        padding-bottom: 12em;
+    }
+}
+
+
+
 
 .hover-div{
     text-align: center;
@@ -194,3 +225,16 @@ nav a{
     0 1px 1px rgba(0, 0, 0, 0.086),
     0 1px 1px rgba(0, 0, 0, 0.12)
 }
+
+@media screen and (max-width: 1024px) {
+    .icons{
+      position: flex;
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 2em;
+      align-items: center;
+      padding-top: 3em;
+    }
+}  
+
+  

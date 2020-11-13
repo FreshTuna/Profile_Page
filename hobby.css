@@ -102,3 +102,22 @@
     -webkit-transform: scale(1.2) rotate(-10deg);
     transform: scale(1.2) rotate(-10deg);
 }
+
+@media screen and (max-width: 800px) {
+    .Hobby-grid{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-row-gap: 5em;
+    
+    }
+    .project figure{
+      width: 17em;
+      height: 20em;
+    }
+  
+    .work .heading{
+      font-size: 4em;
+      text-align: center;
+    }
+    
+  }  
