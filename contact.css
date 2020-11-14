@@ -140,11 +140,22 @@
     z-index: 1000;
 }
 
+
 #Email:hover #effect-1{
     display: block;
 }
 #Email:hover #effect-2{
     display: block;
+}
+
+@media screen and (max-width : 1024px){
+
+#Email:hover #effect-1{
+    display: none;
+}
+#Email:hover #effect-2{
+    display: none;
+}
 }
 
 .effect-1{

@@ -153,7 +153,7 @@ nav a{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-  }
+}
   
 .caption .text{
     position: absolute;
@@ -204,7 +204,7 @@ nav a{
 
 @media screen and (max-width: 1024px) {
     .Header>div{
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
     nav{
         width: 100%;
@@ -233,21 +233,26 @@ nav a{
         position: relative;
         left: 0%;
         width: 100%;
-        padding-bottom: 10%;
+        
     }
-
+    .About-content h1{
+        font-size: 2em;
+    }
+    .About-content h2{
+        font-size: 1.4em;
+    }
     .About-content {
         width: 100%;
         padding-left: 0em;
         padding-right: 0em;
     }
     .About-content .text-div{
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .About-content p{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .About{
@@ -268,6 +273,17 @@ nav a{
       align-items: center;
       padding-top: 3em;
     }
+
+    .icons img{
+        width: 3.3em;
+        height: 3.3em;
+    }
+
+    .text h1{
+        font-size: 0.5em;
+    }
+
+    
 }  
 
   
