@@ -142,10 +142,10 @@
 
 
 #Email:hover #effect-1{
-    display: block;
+    display: none;
 }
 #Email:hover #effect-2{
-    display: block;
+    display: none;
 }
 
 @media screen and (max-width : 1024px){

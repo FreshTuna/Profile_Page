@@ -178,8 +178,9 @@ nav a{
     padding-top: 8em;
     position: flex;
     display:grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(4.5em,1fr));
     grid-gap: 2em;
+    
 }
   
 .icons img{
@@ -270,6 +271,7 @@ nav a{
       display:grid;
       grid-template-columns: repeat(3,1fr);
       grid-gap: 2em;
+      
       align-items: center;
       padding-top: 3em;
     }
